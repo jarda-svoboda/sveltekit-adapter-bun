@@ -258,7 +258,6 @@ export default function adapter(userOpts: AdapterOptions = {}): Adapter {
         emulate() {
             return {
                 platform({ request }: any): AdapterPlatform {
-                    console.log(devContext);
                     const context: {
                         request: Request;
                         server: Bun.Server<WebSocketHandler>;
